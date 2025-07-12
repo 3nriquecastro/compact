@@ -30,6 +30,13 @@ const HeroSection = () => {
           </Button>
         </div>
       </div>
+      
+      {/* Scrolling ticker banner */}
+      <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-sm overflow-hidden">
+        <div className="animate-scroll whitespace-nowrap py-3 text-sm font-medium text-primary-foreground">
+          COMMUNICATION WITH IMPACT • BUSINESS EXCELLENCE • PROFESSIONAL GROWTH • LEADERSHIP DEVELOPMENT • COMMUNICATION WITH IMPACT • BUSINESS EXCELLENCE • PROFESSIONAL GROWTH • LEADERSHIP DEVELOPMENT •
+        </div>
+      </div>
     </section>
   );
 };

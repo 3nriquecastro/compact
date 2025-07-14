@@ -3,31 +3,46 @@ import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-compact-gradient flex items-center justify-center text-center px-4">
-      <div className="max-w-4xl mx-auto space-y-20 animate-fade-in">
-        {/* Logo with border frame */}
+    <section className="relative min-h-screen bg-compact-gradient flex items-center justify-center text-center px-4 overflow-hidden">
+      {/* Background accent elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary-foreground/20 blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-primary-foreground/20 blur-2xl animate-pulse delay-1000"></div>
+      </div>
+      
+      <div className="relative z-10 max-w-5xl mx-auto space-y-24 animate-fade-in">
+        {/* Logo with enhanced design */}
         <div className="relative">
-          <div className="border-2 border-primary-foreground p-8 inline-block">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-primary-foreground tracking-wider mb-2">
+          <div className="relative border-2 border-primary-foreground p-12 inline-block backdrop-blur-sm bg-white/5 shadow-2xl">
+            {/* Glowing corner accents */}
+            <div className="absolute -top-1 -left-1 w-6 h-6 border-l-2 border-t-2 border-primary-foreground"></div>
+            <div className="absolute -top-1 -right-1 w-6 h-6 border-r-2 border-t-2 border-primary-foreground"></div>
+            <div className="absolute -bottom-1 -left-1 w-6 h-6 border-l-2 border-b-2 border-primary-foreground"></div>
+            <div className="absolute -bottom-1 -right-1 w-6 h-6 border-r-2 border-b-2 border-primary-foreground"></div>
+            
+            <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold text-primary-foreground tracking-widest mb-4 drop-shadow-2xl">
               COMPACT
             </h1>
-            <div className="text-lg md:text-xl text-primary-foreground font-light tracking-wide">
+            <div className="text-xl md:text-2xl text-primary-foreground font-light tracking-wide">
               Communication with Impact
             </div>
           </div>
         </div>
         
-        {/* Main tagline */}
-        <div className="space-y-8">
-          <p className="text-lg md:text-xl text-primary-foreground max-w-2xl mx-auto leading-relaxed">
-            Empowering business professionals to communicate with more impact, clarity and personal power.
+        {/* Main tagline with enhanced styling */}
+        <div className="space-y-12">
+          <p className="text-xl md:text-2xl lg:text-3xl text-primary-foreground max-w-4xl mx-auto leading-relaxed font-light drop-shadow-lg">
+            Empowering business professionals to communicate with 
+            <span className="font-semibold text-primary-glow"> more impact</span>, 
+            <span className="font-semibold text-primary-glow"> clarity</span> and 
+            <span className="font-semibold text-primary-glow"> personal power</span>.
           </p>
         
-          {/* CTA Button */}
-          <div className="pt-4">
-            <Button variant="compact" size="lg" className="group">
+          {/* Enhanced CTA Button */}
+          <div className="pt-8">
+            <Button variant="compact" size="lg" className="group text-lg px-12 py-6 shadow-2xl hover:shadow-primary/25 hover:scale-105 transition-all duration-300">
               Book a Consultation
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover:translate-x-2" />
             </Button>
           </div>
         </div>

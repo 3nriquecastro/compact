@@ -35,16 +35,16 @@ const ProblemsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-muted/30">
+    <section className="py-12 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             What problems do we solve?
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {problems.map((problem, index) => (
             <div key={index} className="bg-primary p-8 rounded-lg text-primary-foreground hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
               <div className="mb-6">

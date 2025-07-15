@@ -44,18 +44,25 @@ const ProblemsSection = () => {
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {problems.map((problem, index) => (
-            <div key={index} className="bg-primary p-8 rounded-lg text-primary-foreground hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
-              <div className="mb-6">
-                <problem.icon className="w-12 h-12" />
+            <div key={index} className="group relative h-40 w-full perspective-1000">
+              <div className="relative h-full w-full transition-transform duration-500 transform-style-preserve-3d group-hover:rotate-y-180">
+                {/* Front side */}
+                <div className="absolute inset-0 bg-primary p-6 rounded-lg text-primary-foreground backface-hidden flex flex-col items-center justify-center text-center">
+                  <problem.icon className="w-8 h-8 mb-3" />
+                  <h3 className="text-lg font-bold leading-tight">
+                    {problem.title}
+                  </h3>
+                </div>
+                
+                {/* Back side */}
+                <div className="absolute inset-0 bg-primary p-6 rounded-lg text-primary-foreground backface-hidden rotate-y-180 flex items-center justify-center">
+                  <p className="text-sm leading-relaxed text-center">
+                    {problem.description}
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 leading-tight">
-                {problem.title}
-              </h3>
-              <p className="text-primary-foreground/90 leading-relaxed">
-                {problem.description}
-              </p>
             </div>
           ))}
         </div>

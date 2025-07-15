@@ -17,16 +17,16 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 265 40% 21%;
+    --primary: 265 52% 21%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 265 30% 35%;
+    --secondary: 265 42% 35%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 265 50% 25%;
+    --accent: 265 62% 25%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,13 +34,13 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 265 40% 21%;
+    --ring: 265 52% 21%;
 
     /* COMPACT Brand Colors */
-    --compact-purple: 265 40% 21%;
-    --compact-purple-light: 265 30% 35%;
-    --compact-purple-dark: 265 50% 15%;
-    --primary-glow: 265 30% 35%;
+    --compact-purple: 265 52% 21%;
+    --compact-purple-light: 265 42% 35%;
+    --compact-purple-dark: 265 62% 15%;
+    --primary-glow: 265 42% 35%;
     --compact-gradient: linear-gradient(135deg, hsl(var(--compact-purple-dark)), hsl(var(--compact-purple)));
     
     /* Shadows and Effects */

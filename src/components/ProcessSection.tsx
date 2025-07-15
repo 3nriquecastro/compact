@@ -17,10 +17,10 @@ const ProcessSection = () => {
           
           {/* Title */}
           <div className="text-center lg:text-left">
-            <h2 className="text-4xl font-bold text-primary leading-tight text-center md:text-7xl">
+            <h2 className="text-4xl font-bold text-primary leading-tight text-center md:text-4xl">
               Discover the
               <br />
-              <span className="text-primary">COMPACT</span>
+              <span className="text-primary">COMPACT method</span>
               <br />
               method
             </h2>

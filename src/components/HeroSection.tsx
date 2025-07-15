@@ -38,7 +38,7 @@ const HeroSection = () => {
         
           {/* Enhanced CTA Button */}
           <div className="pt-8">
-            <Button variant="compact" size="lg" className="group text-lg px-12 py-6 shadow-2xl hover:shadow-primary/25 hover:scale-105 transition-all duration-300">
+            <Button variant="compact" size="lg" className="group text-lg px-12 py-6 shadow-2xl hover:shadow-primary/25 hover:scale-105 transition-all duration-300 rounded-full">
               Book a Consultation
               <ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover:translate-x-2" />
             </Button>

@@ -135,7 +135,7 @@ All colors MUST be HSL.
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-25%);
     }
   }
 
@@ -144,7 +144,7 @@ All colors MUST be HSL.
   }
 
   .animate-scroll {
-    animation: scroll 15s linear infinite;
+    animation: scroll 8s linear infinite;
   }
 
   /* 3D Flip Card Utilities */

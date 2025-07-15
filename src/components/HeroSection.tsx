@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-5xl mx-auto space-y-24 animate-fade-in">
         {/* Logo with enhanced design */}
         <div className="relative">
-          <div className="relative p-12 inline-block backdrop-blur-sm bg-white/5 shadow-2xl">
+          <div className="relative p-12 inline-block backdrop-blur-sm bg-white/5 shadow-2xl rounded-2xl">
             {/* Corner lines - only top-left and bottom-right */}
             <div className="absolute -top-1 -left-1 w-8 h-8 border-l-2 border-t-2 border-primary-foreground"></div>
             <div className="absolute -bottom-1 -right-1 w-8 h-8 border-r-2 border-b-2 border-primary-foreground"></div>
